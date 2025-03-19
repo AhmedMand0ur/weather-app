@@ -19,7 +19,7 @@ SkyCast is a modern and minimalistic weather web app that provides real-time wea
 ![SkyCast Screenshot](assets/logo.png)  
 
 ## 🌍 Live Demo  
-🔗 [View SkyCast](https://AhmedMand0ur.io/weather-app/)  
+🔗 [View SkyCast](https://ahmedmand0ur.github.io/weather-app/)  
 
 ## 🔧 Installation  
 Clone the repository and install dependencies:  
