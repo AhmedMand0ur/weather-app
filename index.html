@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <title>SkyCast</title>
+    <script defer src="main.js"></script></head>
+
+    <body>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+            <defs>
+                <linearGradient id="bg">
+                    <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.1)"></stop>
+                    <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+                    <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+                </linearGradient>
+                <path id="wave" fill="url(#bg)"
+                    d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+          s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+            </defs>
+            <g>
+                <use xlink:href='#wave' opacity=".3">
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s"
+                        calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacity=".6">
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s"
+                        calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacity=".9">
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s"
+                        calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                </use>
+            </g>
+        </svg>
+
+        <div class="container">
+            <div class="logo">
+
+                <div class="title">
+                    <img src="1598d14a9be5000674da.png" alt="SkyCast">
+                    <h1>SkyCast</h1>
+                </div>
+
+                <div class="one-liner">
+                    <p>Like a fortune teller, but only for the weather!</p>
+                </div>
+            </div>
+
+
+            <form novalidate>
+                <input type="text" name="city" placeholder="Search Location">
+                <button type="submit">Get Weather</button>
+            </form>
+
+        </div>
+
+        <div class="weather-container">
+            <div class="weather-card">
+                <h2 class="city-name">Enter a city first</h2>
+
+                <div class="temp-container">
+                    <img src="1ed77d827eee03cfd620.png" class="icon" alt="Temperature">
+                    <h1 class="temperature">--°C </h1>
+                    <p class="feels-like"> Feels like --°C</p>
+                </div>
+
+                <p class="weather-condition">Condition: --</p>
+
+                <div class="extra-info">
+                    <p>Humidity: <span class="humidity">--%</span></p>
+                    <p>Wind Speed: <span class="wind-speed">-- km/h</span></p>
+                    <p>UV Index: <span class="uv-index">--</span></p>
+                    <p>Pressure: <span class="pressure">-- hPa</span></p>
+                    <p>Visibility: <span class="visibility">-- km</span></p>
+                    <p>Chance of Rain: <span class="rain-chance">--%</span></p>
+                    <p>Sunrise: <span class="sunrise">-- AM</span></p>
+                    <p>Sunset: <span class="sunset">-- PM</span></p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="forecast-container">
+            <h2>15-Days Forcast</h2>
+            <div class="forecast-scroll">
+                <!-- Forecast cards will be dynamically added here -->
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <p>&#9400; 2025 Copyright - <a href="https://github.com/AhmedMand0ur/weather-app">Ahmed_Mandour</a></p>
+        </div>
+    </body>
+
+</html>
